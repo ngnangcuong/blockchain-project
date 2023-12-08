@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "lib": [
+      "ES2020"
+    ],
+    "moduleResolution": "Node",
+    "skipDefaultLibCheck": true,
+    "noImplicitAny": true,
+    "outDir": "./dist",
+    "sourceMap": true,
+    "declaration": true,
+  },
+  "exclude": [
+    "node-modules",
+  ],
+  "include": [
+    "artifacts/**/*",
+    "artifacts/**/*.json",
+    "script/**/*",
+    "test/**/*",
+    "src/types/**/*",
+  ]
+}
