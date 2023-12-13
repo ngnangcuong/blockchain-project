@@ -131,7 +131,7 @@ contract NFTMarketplace is ReentrancyGuard {
         uint nftCount = _nftCount;
         uint myNftCount = 0;
         for (uint i = 0; i < nftCount; i++) {
-            if (_idToNFT[i + 1].owner == msg.sender && _idToNFT[i + 1].listed) {
+            if (_idToNFT[i + 1].seller == msg.sender && _idToNFT[i + 1].listed) {
                 myNftCount++;
             }
         }
@@ -139,7 +139,7 @@ contract NFTMarketplace is ReentrancyGuard {
         NFT[] memory nfts = new NFT[](myNftCount);
         uint nftsIndex = 0;
         for (uint i = 0; i < nftCount; i++) {
-            if (_idToNFT[i + 1].owner == msg.sender && _idToNFT[i + 1].listed) {
+            if (_idToNFT[i + 1].seller == msg.sender && _idToNFT[i + 1].listed) {
                 nfts[nftsIndex] = _idToNFT[i + 1];
                 nftsIndex++;
             }

@@ -4,7 +4,7 @@ const typechain = require("../src/types")
 
 async function main() {
   const accounts = await ethers.getSigners();
-  const [minter, buyer] = accounts;
+  const minter = accounts[0];
 
   const nftMarketplace = await new typechain.NFTMarketplace__factory(minter).deploy();
   console.log("NFTMarketplace: ", nftMarketplace.target);
