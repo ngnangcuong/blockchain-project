@@ -1,9 +1,9 @@
 {
-  "name": "hardhat-project",
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.2",
     "@nomicfoundation/hardhat-toolbox": "^4.0.0",
-    "hardhat": "^2.19.1"
+    "hardhat": "^2.19.1",
+    "typechain": "^8.3.2"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^5.0.0",
@@ -11,5 +11,16 @@
     "dotnet": "^1.1.4",
     "ethereum-waffle": "^4.0.10",
     "ethers": "^6.9.0"
-  }
+  },
+  "name": "nft-marketplace-project",
+  "description": "Project for IT4527",
+  "version": "0.0.0",
+  "main": "dist/src/types/index.js",
+  "types": "dist/src/types/index.d.ts",
+  "directories": {
+    "test": "test"
+  },
+  "author": "cuongnn21",
+  "license": "ISC",
+  "type": "commonjs"
 }

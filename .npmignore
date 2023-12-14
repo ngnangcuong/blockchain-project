@@ -1,0 +1,10 @@
+/node_modules
+/contracts
+/.vscode
+/scripts
+/test
+/hardhat.config.ts
+/src
+/cache
+/artifacts
+/.env
